@@ -6,8 +6,8 @@ WiFiClient  client;
 
 unsigned long myChannelNumber = 1;
 const char * myWriteAPIKey = "7AXQF24NMGB42B8V";
-const int dry = 870; // value on cap sensor when it is fully dry.
-const int wet = 514; // value on cap sensor when it is fully wet.
+const int dry = 855; // value on cap sensor when it is fully dry.
+const int wet = 483; // value on cap sensor when it is fully wet.
 char ssid[] = "***";
 char password[] = "***";
 int Time_S = 1; //Change this to your prefered sampling interval in seconds.
@@ -64,5 +64,6 @@ void getMoisture() {
   phC = percentageHumidity;
   
   Serial.println("Cap value on moisture sensor is: ");  
+  Serial.println(sensorValue);
   Serial.print(phC); Serial.println("%");
 }
