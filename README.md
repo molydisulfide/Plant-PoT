@@ -8,7 +8,7 @@
 
 **Plant-PoT** is an Arduino-based IoT moisture monitoring system for house plants.
 
-A capacitve moisture sensor inserted into the plant soil is used to trip a message on the LCD screen telling you to water the plant once the moisture falls below a certain threshold. 
+A capacitive moisture sensor inserted into the plant soil is used to trip a message on the LCD screen telling you to water the plant once the moisture falls below a certain threshold. 
 
 The moisture data is being periodically sent to a ThingSpeak server, where a MATLAB visualization allows you to track the moisture value trend and displays the current moisture value. 
 
